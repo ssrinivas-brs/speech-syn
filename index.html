@@ -1,0 +1,84 @@
+<!--
+     Author: Build Rise Shine with Nyros (BRS) 
+     Created: 2023
+     Library / Component: Speech synthesis
+     Description: Main page  for the app
+     (c) Copyright by BRS with Nyros. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Speech Synthesis | JS Basic Apps</title>
+    <link rel="icon" href="http://203.193.173.125/buildriseshine/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/speech.css" />
+  </head>
+  <body>
+    <header>
+      <div class="d-flex bg-gradient">
+        <div class="d-flex flex-grow-1">
+          <nav class="courseTitle">
+          </nav>
+          <div class="flex-grow-1">
+            <div class="d-flex ps-3 align-items-center">
+              <div class="flex-grow-1">
+                <h4>Speech Synthesis</h4>
+                <p><a href="https://github.com/brs-studio/js-basics/tree/main/speech-syn" target="_blank" >Git Repository</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="container" style="margin-bottom: 100px">
+      <div class="voiceinator">
+        <select name="voice" id="voices">
+          <option value="">Select A Voice</option>
+        </select>
+
+        <label for="rate">Rate:</label>
+        <input name="rate" type="range" min="0" max="3" value="1" step="0.1" />
+
+        <label for="pitch">Pitch:</label>
+
+        <input name="pitch" type="range" min="0" max="2" step="0.1" />
+        <textarea name="text">
+JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</textarea
+        >
+        <button id="stop">Stop!</button>
+        <button id="speak">Speak</button>
+      </div>
+    </main>
+
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-center px-5">
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

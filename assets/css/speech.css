@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #1a4b84;
+  --chathams_blue: #1a4b84;
+  --tamarillo: #991e14;
+  --yellow_sea: #fead06;
+}
+
+.voiceinator {
+  padding: 1rem;
+  width: auto;
+  border-radius: 1rem;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  background: #f7f7f7;
+  outline: 0;
+}
+
+textarea {
+  height: 15rem;
+}
+
+.voiceinator button {
+  color: #f7f7f7;
+  background: var(--primary-color);
+  border: 0;
+  width: 49%;
+  float: left;
+  margin-bottom: 0;
+  border-bottom: 5px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+.voiceinator input[type="range"] {
+  background: #2980b9 !important;
+  color: #fead06 !important;
+  background-color: aqua !important;
+}
+
+
+header .navbar-brand {
+  height: 150px;
+}
